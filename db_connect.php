@@ -1,7 +1,7 @@
 <?php
-	$server = "servsqltf-tp.postgres.database.azure.com";
+	$server = $_ENV['host'];
 	$username = $_ENV['user'];
-	$password = "Password####PG";
+	$password = $_ENV['password'];
 	$db = "pg_teiva_francis";
 	$conn = pg_connect("host=$server dbname=$db user=$username password=$password");
 ?>
