@@ -13,7 +13,7 @@
         }
         $response = array();
         while ($row = pg_fetch_row($result)) {
-            $response[] = array("Id" => $row[0], "Prénom" => $row[1], "Nom" => $row[1]);
+            $response[] = array("Id" => $row[0], "Prenom" => $row[1], "Nom" => $row[1]);
         }
         header('Content-Type: application/json');
         echo json_encode($response, JSON_PRETTY_PRINT);
