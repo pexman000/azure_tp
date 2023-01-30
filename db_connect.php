@@ -1,5 +1,4 @@
 <?php
-	echo $_ENV['user']
 	$server = "servsqltf-tp.postgres.database.azure.com";
 	$username = "postgresteiva@servsqltf-tp.postgres.database";
 	$password = "Password####PG";
