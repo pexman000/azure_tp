@@ -15,6 +15,8 @@
         while ($row = pg_fetch_row($result)) {
             $response[] = array("Id" => $row[0], "Prenom" => $row[1], "Nom" => $row[2]);
         }
+        header("Access-Control-Allow-Origin: *");
+        header("Access-Control-Allow-Headers: *");
         header('Content-Type: application/json');
         echo json_encode($response, JSON_PRETTY_PRINT);
     }
